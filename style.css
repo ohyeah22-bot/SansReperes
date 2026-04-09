@@ -31,10 +31,11 @@ body.texture{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 36px;
+  gap: 48px; /* espace global entre les éléments */
+  transform: translateY(-10px);
 }
 .title{
-  margin:0;
+  margin-top: 10px;
   text-align: center;
   font-size: clamp(20px, 3.15vw, 24px);
   font-weight:800;
@@ -52,20 +53,22 @@ body.texture{
 .icon-wrap {
   width: 220px;
   height: 220px;
-  margin: 12px auto 20px;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .status{
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: clamp(15px, 2.25vw, 17px);
-  line-height: 1.2;
+  margin-top: 8px;
+  font-size: 16px; /* légèrement plus gros */
+  line-height: 1.35; /* plus respirant */
   letter-spacing: .02em;
   text-align: center;
 }
-.monoish{ font-family: "Courier New", Courier, monospace; }
+.monoish {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+}
 
 .loader {
   position: relative;
